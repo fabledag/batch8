@@ -67,7 +67,7 @@
                 </div>
                 <hr class="line-package hr-right hidden-sm hidden-xs">
             </div>
-            <div id="list-package" class="swiper-container2 container">
+            <div id="list-package" class="swiper-container container">
                 <div class="swiper-wrapper row">
                     <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
                         <div class="icn-package">
@@ -182,9 +182,11 @@
                         </div>
                     </div>
                 </div>
-                <!--paginacion-->
-                <div class="swiper-pagination2"></div>
             </div>
+            <!--Arrows-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!--Arrows-->
             <div id="custom-price">
                 <div class="container">
                     <div class="row">
@@ -352,7 +354,7 @@
             }
 
             //Inicializar Swiper
-            var swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('#slider .swiper-container', {
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
                 nextButton: '.swiper-button-next',
@@ -362,10 +364,10 @@
             });
 
             //Segundo swiper
-            var swiper2 = new Swiper('.swiper-container2', {
-                pagination: '.swiper-pagination2',
+            var swiper2 = new Swiper('#packages-home .swiper-container', {
                 slidesPerView: 3,
-                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
                 spaceBetween: 10,
                 freeMode: true
             });
