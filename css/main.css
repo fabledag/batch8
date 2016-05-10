@@ -243,7 +243,7 @@ footer .container ul.social li a:hover {
 }
 #packages-home #list-package .swiper-slide .description ul.description-list {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 #packages-home #list-package .swiper-slide .description ul.description-list li {
   list-style: none;
@@ -276,6 +276,7 @@ footer .container ul.social li a:hover {
 #packages-home .swiper-button-next {
   background-image: url('../sources/images/package_next.png');
   right: 30px;
+  top: 55%;
   background-size: 40px 40px;
   width: 40px;
   height: 40px;
@@ -283,6 +284,7 @@ footer .container ul.social li a:hover {
 #packages-home .swiper-button-prev {
   background-image: url('../sources/images/package_prev.png');
   left: 30px;
+  top: 55%;
   background-size: 40px 40px;
   width: 40px;
   height: 40px;
