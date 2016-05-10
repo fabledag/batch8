@@ -177,6 +177,14 @@ footer .container ul.social li a:hover {
   color: #f9a221;
   text-transform: uppercase;
 }
+#list-package .container {
+  overflow: hidden;
+}
+#list-package .swiper-container2 {
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+}
 #packages-home {
   position: relative;
   padding: 50px 0 0 0;
@@ -206,57 +214,57 @@ footer .container ul.social li a:hover {
 #packages-home #list-package {
   padding: 100px 0 0 0;
 }
-#packages-home #list-package .icn-package {
+#packages-home #list-package .swiper-slide .icn-package {
   text-align: center;
   color: white;
   background: #f9a221;
   padding: 10px;
   position: relative;
 }
-#packages-home #list-package .icn-package img.icono {
+#packages-home #list-package .swiper-slide .icn-package img.icono {
   max-width: 80px;
   position: absolute;
   top: -30px;
   left: 40%;
   margin: 0 auto;
 }
-#packages-home #list-package .icn-package h4 {
+#packages-home #list-package .swiper-slide .icn-package h4 {
   padding-top: 30px;
   text-transform: uppercase;
   font-size: 25px;
 }
-#packages-home #list-package .description {
+#packages-home #list-package .swiper-slide .description {
   background: #f0f0f0;
   padding: 20px;
   text-align: center;
   min-height: 370px;
 }
-#packages-home #list-package .description ul.description-list {
+#packages-home #list-package .swiper-slide .description ul.description-list {
   margin: 0;
   padding-bottom: 30px;
 }
-#packages-home #list-package .description ul.description-list li {
+#packages-home #list-package .swiper-slide .description ul.description-list li {
   list-style: none;
   padding: 10px 0;
   font-weight: 300;
 }
-#packages-home #list-package .description ul.description-list li span {
+#packages-home #list-package .swiper-slide .description ul.description-list li span {
   color: #f9a221;
   font-size: 25px;
   padding-right: 10px;
   vertical-align: top;
 }
-#packages-home #list-package .description h2.price {
+#packages-home #list-package .swiper-slide .description h2.price {
   font-size: 45px;
   color: #f9a221;
   margin: 30px 0 0 0;
 }
-#packages-home #list-package .description h2.price span {
+#packages-home #list-package .swiper-slide .description h2.price span {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
 }
-#packages-home #list-package .description .txt-price {
+#packages-home #list-package .swiper-slide .description .txt-price {
   font-size: 14px;
   font-weight: 400;
   padding: 0;
