@@ -24,7 +24,7 @@ img {
   width: 100%;
 }
 .sections {
-  padding-top: 90px;
+  margin-top: 90px;
 }
 .titles {
   width: 100%;
@@ -470,6 +470,10 @@ footer .container ul.social li a:hover {
 }
 #homeMap .info-map .data-info ul li a:hover {
   color: #f9a221;
+}
+#nosotros {
+  margin: 0;
+  padding-top: 68px;
 }
 #nosotros .banner-nosotros {
   padding-top: 30px;

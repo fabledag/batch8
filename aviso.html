@@ -93,22 +93,7 @@
 <script type="text/javascript" src="js/libs/swiper.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
-<script>
-    function initMap() {
-        var dataL01 = {lat:19.3933199, lng:-99.1746729};
-        var map = new google.maps.Map(document.getElementById('map-contact'), {
-            zoom: 17,
-            center: new google.maps.LatLng(dataL01),
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            scrollwheel: false,
-        });
-        var marker = new google.maps.Marker({
-            position: dataL01,
-            map: map,
-            icon: '/sources/images/pin_dicenter.png'
-        });
-    }
-</script>
+
 
 </body>
 </html>
