@@ -206,8 +206,6 @@ footer .container ul.social li a:hover {
 #packages-home #list-package {
   position: relative;
   padding: 50px 0 0 0;
-  overflow: hidden;
-  z-index: 300;
 }
 #packages-home #list-package .container {
   overflow: hidden;
@@ -280,6 +278,7 @@ footer .container ul.social li a:hover {
   background-size: 40px 40px;
   width: 40px;
   height: 40px;
+  z-index: 20;
 }
 #packages-home .swiper-button-prev {
   background-image: url('../sources/images/package_prev.png');
@@ -288,6 +287,7 @@ footer .container ul.social li a:hover {
   background-size: 40px 40px;
   width: 40px;
   height: 40px;
+  z-index: 20;
 }
 #packages-home #custom-price {
   width: 100%;

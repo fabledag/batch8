@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/libs/bootstrap-switch.min.css" >
     <link rel="stylesheet" href="css/libs/swiper.min.css" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="favicon.png"/>
     <title>DiCenter::Learning Solutions</title>
@@ -68,8 +68,8 @@
                 <hr class="line-package hr-right hidden-sm hidden-xs">
             </div>
             <div id="list-package" class="swiper-container container">
-                <div class="swiper-wrapper row">
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete01.png" alt="">
                             <h4>Paquete #1</h4>
@@ -85,7 +85,7 @@
                             <p class="txt-price">Precio por hora</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete02.png" alt="">
                             <h4>Paquete #2</h4>
@@ -101,7 +101,7 @@
                             <p class="txt-price">Precio por hora</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete03.png" alt="">
                             <h4>Paquete #3</h4>
@@ -117,7 +117,7 @@
                             <p class="txt-price">Precio por hora</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete01.png" alt="">
                             <h4>Paquete #4</h4>
@@ -133,7 +133,7 @@
                             <p class="txt-price">Precio por hora</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete02.png" alt="">
                             <h4>Paquete #5</h4>
@@ -149,7 +149,7 @@
                             <p class="txt-price">Precio por hora</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete03.png" alt="">
                             <h4>Paquete #6</h4>
@@ -165,7 +165,7 @@
                             <p class="txt-price">Precio por hora</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete01.png" alt="">
                             <h4>Paquete #7</h4>
@@ -181,7 +181,7 @@
                             <p class="txt-price">Precio por hora</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 col-sm-6 swiper-slide">
+                    <div class="swiper-slide">
                         <div class="icn-package">
                             <img class="icono" src="sources/images/img_paquete02.png" alt="">
                             <h4>Paquete #8</h4>
@@ -346,11 +346,11 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/libs/bootstrap-switch.min.js"></script>
         <script type="text/javascript" src="js/libs/swiper.min.js"></script>
-        <script type="text/javascript" src="js/libs/main.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
         <script>
             //Integración de mapa de google maps
@@ -365,7 +365,7 @@
                 var marker = new google.maps.Marker({
                     position: dataL01,
                     map: map,
-                    icon: '/sources/images/pin_dicenter.png'
+                    icon: 'sources/images/pin_dicenter.png'
                 });
             }
 
@@ -373,21 +373,53 @@
             var swiper = new Swiper('#slider .swiper-container', {
                 pagination: '.swiper-pagination',
                 paginationClickable: true,
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
+                nextButton: '#slider .swiper-button-next',
+                prevButton: '#slider .swiper-button-prev',
                 spaceBetween: 20,
-                effect: 'fade'
+                effect: 'fade',
+                loop : true,
+                autoplay: 4500
             });
 
             //Segundo swiper
             var swiper2 = new Swiper('#packages-home .swiper-container', {
                 slidesPerView: 3,
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                spaceBetween: 10,
-                freeMode: true
+                nextButton: '#packages-home .swiper-button-next',
+                prevButton: '#packages-home .swiper-button-prev',
+                spaceBetween: 30,
+                autoplay: 2500
             });
 
+            var mobile = 720;
+
+            $(window).resize(function(){
+                resizeSwiper();
+            });
+
+            $(window).ready(function(){
+                resizeSwiper();
+            });
+
+            resizeSwiper = function(){
+                if($(window).width() <= 720){
+                    swiper2 = null;
+                    swiper2 = new Swiper('#packages-home .swiper-container', {
+                        slidesPerView: 1,
+                        nextButton: '#packages-home .swiper-button-next',
+                        prevButton: '#packages-home .swiper-button-prev',
+                        spaceBetween: 30,
+                        autoplay: 2500
+                    });
+                }else{
+                    swiper2 = new Swiper('#packages-home .swiper-container', {
+                        slidesPerView: 3,
+                        nextButton: '#packages-home .swiper-button-next',
+                        prevButton: '#packages-home .swiper-button-prev',
+                        spaceBetween: 30,
+                        autoplay: 2500
+                    });
+                }
+            }
         </script>
     </body>
 </html>
