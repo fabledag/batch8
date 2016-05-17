@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/libs/swiper.min.css" >
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="css/main.css"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="favicon.png"/>
@@ -41,7 +42,7 @@
 <section id="paquetes" class="sections">
     <div class="container">
         <div class="row">
-            <div class="titles col-md-12">
+            <div class="titles">
                 <h2>Paquetes</h2>
                 <hr class="border-title">
             </div>
@@ -51,12 +52,240 @@
                 <h3>Paquete 1</h3>
                 <img src="sources/images/img_paquete01.jpg" alt="">
             </div>
-            <div class="col-md-4">
-
+            <div class="col-md-4 info">
+                <h4>Incluye</h4>
+                <ul>
+                    <li><span></span>Capacidad de 5 a 10 personas</li>
+                    <li><span></span>Coffee Break</li>
+                    <li><span></span>Ancho de banda de 100Mbps</li>
+                    <li><span></span>Vista Panorámica</li>
+                    <li><span></span>Aula tipo herradura</li>
+                    <li><span></span>Soporte técnico de primer nivel</li>
+                    <li><span></span>Llamadas telefónicas locales</li>
+                    <li><span></span>Pantalla plana de 32’’</li>
+                    <li><span></span>Rotafolio y plumones </li>
+                </ul>
+                <p><span>$300.00</span>MXN / hora</p>
             </div>
-            <div class="col-md-4">
-
+            <div class="col-md-4 form">
+                <h4>Detalles reservación</h4>
+                <form action="">
+                    <div class="form-group row">
+                        <label for="">Selecciona una fecha</label>
+                        <div class='input-group date col-md-12' id='timePickerPackage'>
+                            <input type='text' class="form-control" style="padding: 0 -15px;" />
+                            <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 col-xs-6 padding-left">
+                            <label for="">Hora de inicio</label>
+                            <select class="form-control">
+                                <option>09:00 hrs</option>
+                                <option>10:00 hrs</option>
+                                <option>11:00 hrs</option>
+                                <option>12:00 hrs</option>
+                                <option>13:00 hrs</option>
+                                <option>14:00 hrs</option>
+                                <option>15:00 hrs</option>
+                                <option>16:00 hrs</option>
+                                <option>17:00 hrs</option>
+                                <option>18:00 hrs</option>
+                                <option>19:00 hrs</option>
+                                <option>20:00 hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-xs-6 padding-right">
+                            <label for="">Hora de inicio</label>
+                            <select class="form-control">
+                                <option>10:00 hrs</option>
+                                <option>11:00 hrs</option>
+                                <option>12:00 hrs</option>
+                                <option>13:00 hrs</option>
+                                <option>14:00 hrs</option>
+                                <option>15:00 hrs</option>
+                                <option>16:00 hrs</option>
+                                <option>17:00 hrs</option>
+                                <option>18:00 hrs</option>
+                                <option>19:00 hrs</option>
+                                <option>20:00 hrs</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="checkbox text-right">
+                        <label>
+                            <input type="checkbox" value="">
+                            Agregar otro día
+                        </label>
+                    </div>
+                    <button class="btn-general btn-generalOrange center-block">Reservar</button>
+                </form>
             </div>
+        </div>
+        <div class="row paquete">
+            <div class="col-md-4 img-title">
+                <h3>Paquete 2</h3>
+                <img src="sources/images/img_paquete01.jpg" alt="">
+            </div>
+            <div class="col-md-4 info">
+                <h4>Incluye</h4>
+                <ul>
+                    <li><span></span>Capacidad de 5 a 10 personas</li>
+                    <li><span></span>Coffee Break</li>
+                    <li><span></span>Ancho de banda de 100Mbps</li>
+                    <li><span></span>Vista Panorámica</li>
+                    <li><span></span>Aula tipo herradura</li>
+                    <li><span></span>Soporte técnico de primer nivel</li>
+                    <li><span></span>Llamadas telefónicas locales</li>
+                    <li><span></span>Pantalla plana de 32’’</li>
+                    <li><span></span>Rotafolio y plumones </li>
+                </ul>
+                <p><span>$500.00</span>MXN / hora</p>
+            </div>
+            <div class="col-md-4 form">
+                <h4>Detalles reservación</h4>
+                <form action="">
+                    <div class="form-group row">
+                        <label for="">Selecciona una fecha</label>
+                        <div class='input-group date col-md-12' id='timePickerPackage'>
+                            <input type='text' class="form-control" style="padding: 0 -15px;" />
+                            <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 col-xs-6 padding-left">
+                            <label for="">Hora de inicio</label>
+                            <select class="form-control">
+                                <option>09:00 hrs</option>
+                                <option>10:00 hrs</option>
+                                <option>11:00 hrs</option>
+                                <option>12:00 hrs</option>
+                                <option>13:00 hrs</option>
+                                <option>14:00 hrs</option>
+                                <option>15:00 hrs</option>
+                                <option>16:00 hrs</option>
+                                <option>17:00 hrs</option>
+                                <option>18:00 hrs</option>
+                                <option>19:00 hrs</option>
+                                <option>20:00 hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-xs-6 padding-right">
+                            <label for="">Hora de inicio</label>
+                            <select class="form-control">
+                                <option>10:00 hrs</option>
+                                <option>11:00 hrs</option>
+                                <option>12:00 hrs</option>
+                                <option>13:00 hrs</option>
+                                <option>14:00 hrs</option>
+                                <option>15:00 hrs</option>
+                                <option>16:00 hrs</option>
+                                <option>17:00 hrs</option>
+                                <option>18:00 hrs</option>
+                                <option>19:00 hrs</option>
+                                <option>20:00 hrs</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="checkbox text-right">
+                        <label>
+                            <input type="checkbox" value="">
+                            Agregar otro día
+                        </label>
+                    </div>
+                    <button class="btn-general btn-generalOrange center-block">Reservar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row paquete">
+            <div class="col-md-4 img-title">
+                <h3>Paquete 3</h3>
+                <img src="sources/images/img_paquete01.jpg" alt="">
+            </div>
+            <div class="col-md-4 info">
+                <h4>Incluye</h4>
+                <ul>
+                    <li><span></span>Capacidad de 5 a 10 personas</li>
+                    <li><span></span>Coffee Break</li>
+                    <li><span></span>Ancho de banda de 100Mbps</li>
+                    <li><span></span>Vista Panorámica</li>
+                    <li><span></span>Aula tipo herradura</li>
+                    <li><span></span>Soporte técnico de primer nivel</li>
+                    <li><span></span>Llamadas telefónicas locales</li>
+                    <li><span></span>Pantalla plana de 32’’</li>
+                    <li><span></span>Rotafolio y plumones </li>
+                </ul>
+                <p><span>$800.00</span>MXN / hora</p>
+            </div>
+            <div class="col-md-4 form">
+                <h4>Detalles reservación</h4>
+                <form action="">
+                    <div class="form-group row">
+                        <label for="">Selecciona una fecha</label>
+                        <div class='input-group date col-md-12' id='timePickerPackage'>
+                            <input type='text' class="form-control" style="padding: 0 -15px;" />
+                            <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 col-xs-6 padding-left">
+                            <label for="">Hora de inicio</label>
+                            <select class="form-control">
+                                <option>09:00 hrs</option>
+                                <option>10:00 hrs</option>
+                                <option>11:00 hrs</option>
+                                <option>12:00 hrs</option>
+                                <option>13:00 hrs</option>
+                                <option>14:00 hrs</option>
+                                <option>15:00 hrs</option>
+                                <option>16:00 hrs</option>
+                                <option>17:00 hrs</option>
+                                <option>18:00 hrs</option>
+                                <option>19:00 hrs</option>
+                                <option>20:00 hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-xs-6 padding-right">
+                            <label for="">Hora de inicio</label>
+                            <select class="form-control">
+                                <option>10:00 hrs</option>
+                                <option>11:00 hrs</option>
+                                <option>12:00 hrs</option>
+                                <option>13:00 hrs</option>
+                                <option>14:00 hrs</option>
+                                <option>15:00 hrs</option>
+                                <option>16:00 hrs</option>
+                                <option>17:00 hrs</option>
+                                <option>18:00 hrs</option>
+                                <option>19:00 hrs</option>
+                                <option>20:00 hrs</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="checkbox text-right">
+                        <label>
+                            <input type="checkbox" value="">
+                            Agregar otro día
+                        </label>
+                    </div>
+                    <button class="btn-general btn-generalOrange center-block">Reservar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="pagination pull-right">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
         </div>
     </div>
 </section>
@@ -92,9 +321,22 @@
 </footer>
 <script type="text/javascript" src="js/libs/jquery.min.js"></script>
 <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/libs/moment.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="js/libs/bootstrap-switch.min.js"></script>
 <script type="text/javascript" src="js/libs/swiper.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
+<script type="text/javascript">
+    $(function () {
+        $('#timePickerPackage').datetimepicker({
+            format: 'DD/MM/YYYY'
+        });
+        $('#timeStar').datetimepicker({
+            dateFormat: '',
+            timeFormat: 'hh:mm tt'
+        });
+    });
+</script>
 </body>
 </html>

@@ -666,7 +666,15 @@ footer .container ul.social li a:hover {
   float: right;
 }
 #paquetes .paquete {
-  margin: 30px 0;
+  margin-bottom: 30px;
+  position: relative;
+  background: #f0f0f0;
+}
+#paquetes .paquete h4 {
+  font-weight: 800;
+}
+#paquetes .paquete .img-title {
+  padding: 0;
 }
 #paquetes .paquete .img-title h3 {
   background: #f9a221;
@@ -674,6 +682,75 @@ footer .container ul.social li a:hover {
   text-align: center;
   padding: 20px 0;
   margin: 0;
+  text-transform: uppercase;
+}
+#paquetes .paquete .info {
+  height: 100%;
+  min-height: 426px;
+  padding: 20px;
+  border-right: 1px solid #8d8d8d;
+}
+#paquetes .paquete .info ul {
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#paquetes .paquete .info ul li {
+  padding: 3px 0;
+  list-style: none;
+}
+#paquetes .paquete .info ul li span {
+  background: url('../sources/images/bullet_paquete.jpg') no-repeat;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  padding-right: 20px;
+}
+#paquetes .paquete .info p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-weight: 800;
+  color: #f9a221;
+}
+#paquetes .paquete .info p span {
+  font-size: 40px;
+}
+#paquetes .paquete .form {
+  padding: 20px;
+}
+#paquetes .paquete .form .padding-left {
+  padding: 0 10px 0 0;
+}
+#paquetes .paquete .form .padding-right {
+  padding: 0 0 0 10px;
+}
+#paquetes .paquete .form .row {
+  margin: 20px 0 30px 0;
+}
+#paquetes .paquete .form label {
+  font-size: 14px;
+  font-weight: 400;
+}
+#paquetes .paquete .form button {
+  margin-top: 60px;
+}
+#paquetes .pagination {
+  margin: 0 0 30px 0;
+}
+#paquetes .pagination > li > a,
+#paquetes .pagination > li > span {
+  color: #333333;
+}
+#paquetes .pagination > .active > a,
+#paquetes .pagination > .active > a:focus,
+#paquetes .pagination > .active > a:hover,
+#paquetes .pagination > .active > span,
+#paquetes .pagination > .active > span:focus,
+#paquetes .pagination > .active > span:hover {
+  background-color: #f9a221;
+  border-color: #f9a221;
+  color: white;
 }
 #live {
   padding-top: 30px;
