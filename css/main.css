@@ -716,23 +716,20 @@ footer .container ul.social li a:hover {
 #paquetes .paquete .info p span {
   font-size: 40px;
 }
-#paquetes .paquete .form {
-  padding: 20px;
-}
-#paquetes .paquete .form .padding-left {
+#paquetes .paquete form .padding-left {
   padding: 0 10px 0 0;
 }
-#paquetes .paquete .form .padding-right {
+#paquetes .paquete form .padding-right {
   padding: 0 0 0 10px;
 }
-#paquetes .paquete .form .row {
+#paquetes .paquete form .row {
   margin: 20px 0 30px 0;
 }
-#paquetes .paquete .form label {
+#paquetes .paquete form label {
   font-size: 14px;
   font-weight: 400;
 }
-#paquetes .paquete .form button {
+#paquetes .paquete form button {
   margin-top: 60px;
 }
 #paquetes .pagination {
@@ -790,6 +787,112 @@ footer .container ul.social li a:hover {
 }
 #testimonio p {
   text-align: justify;
+}
+#reservacion .steps {
+  position: relative;
+  margin: 50px 0;
+  z-index: 100;
+  background: url('../sources/images/line_steps.jpg') no-repeat 55% 24%;
+}
+#reservacion .steps ul.list-steps li {
+  list-style: none;
+  width: 16.2%;
+  display: inline-block;
+  vertical-align: top;
+}
+#reservacion .steps ul.list-steps li a {
+  text-align: center;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+#reservacion .steps ul.list-steps li a .number {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: white;
+  border: 2px solid #cccccc;
+}
+#reservacion .steps ul.list-steps li a .number h3 {
+  font-size: 35px;
+}
+#reservacion .steps ul.list-steps li a:hover,
+#reservacion .steps ul.list-steps li a:active,
+#reservacion .steps ul.list-steps li a:focus,
+#reservacion .steps ul.list-steps li a.active {
+  text-decoration: none;
+}
+#reservacion .steps ul.list-steps li a:hover .number,
+#reservacion .steps ul.list-steps li a:active .number,
+#reservacion .steps ul.list-steps li a:focus .number,
+#reservacion .steps ul.list-steps li a.active .number {
+  background: #f9a221;
+  color: white;
+  border: 2px solid #f9a221;
+}
+#reservacion .steps ul.list-steps li a:hover h4,
+#reservacion .steps ul.list-steps li a:active h4,
+#reservacion .steps ul.list-steps li a:focus h4,
+#reservacion .steps ul.list-steps li a.active h4 {
+  font-weight: 800;
+  color: #333333;
+}
+#reservacion .steps ul.list-steps li a h4 {
+  max-width: 100px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+#reservacion .container-steps {
+  position: relative;
+  min-height: 650px;
+}
+#reservacion .container-steps h3.description-step {
+  padding-bottom: 40px;
+  width: 80%;
+}
+#reservacion .container-steps .steper {
+  position: absolute;
+  top: 0;
+  display: none;
+  left: 0;
+}
+#reservacion .container-steps #step1 .aulas h3 {
+  color: #f9a221;
+}
+#reservacion .container-steps #step1 .aulas a.btn-general {
+  width: 100%;
+}
+#reservacion .container-steps #step2 form {
+  min-height: 500px;
+  position: relative;
+}
+#reservacion .container-steps #step2 form .padding-left {
+  padding: 0 10px 0 0;
+}
+#reservacion .container-steps #step2 form .padding-right {
+  padding: 0 0 0 10px;
+}
+#reservacion .container-steps #step2 form .row {
+  margin: 20px 0 30px 0;
+}
+#reservacion .container-steps #step2 form label {
+  font-size: 14px;
+  font-weight: 400;
+}
+#reservacion .container-steps #step2 form button {
+  max-width: 200px;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+#reservacion .container-steps #step3 .form-group {
+  margin: 20px 0;
+}
+#reservacion .container-steps #step3 .form-group label {
+  font-weight: 600;
+}
+#reservacion .container-steps #step3 button {
+  max-width: 200px;
 }
 @media (max-width: 720px) {
   .btn-general {

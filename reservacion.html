@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/libs/bootstrap-switch.min.css" >
+    <link rel="stylesheet" href="css/libs/swiper.min.css" >
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/font-awesome.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    <title>DiCenter::Learning Solutions</title>
+</head>
+<body>
+<header id="main-header">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="sources/images/logo_DiCenter.png" alt="Logotipo DiCenter"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="soluciones.html">Soluciones</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <section id="reservacion" class="sections">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titles">
+                        <h2>Haz tu reservación</h2>
+                        <hr class="border-title">
+                    </div>
+                    <div class="steps">
+                        <ul class="list-steps">
+                            <li>
+                                <a id="btn1" href="#step1" class="btn-num active">
+                                    <div class="number">
+                                        <h3>1</h3>
+                                    </div>
+                                    <h4>Selecciona tu aula</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step2" class="btn-num">
+                                    <div class="number">
+                                        <h3>2</h3>
+                                    </div>
+                                    <h4>Fecha y horario</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step3" class="btn-num">
+                                    <div class="number">
+                                        <h3>3</h3>
+                                    </div>
+                                    <h4>Items adicionales</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step4" class="btn-num">
+                                    <div class="number">
+                                        <h3>4</h3>
+                                    </div>
+                                    <h4>Detalle reservación</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step5" class="btn-num">
+                                    <div class="number">
+                                        <h3>5</h3>
+                                    </div>
+                                    <h4>Método de pago</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step6" class="btn-num" >
+                                    <div class="number">
+                                        <h3>6</h3>
+                                    </div>
+                                    <h4>¡Gracias!</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container-steps">
+                        <div id="step1" class="steper">
+                            <div class="col-md-12">
+                                <h3 class="description-step">Aquí encontrarás las aulas que tenemos disponibles, para checar disponibilidad dale click en seleccionar</h3>
+                            </div>
+                            <div class="col-md-3 aulas" id="aula1">
+                                <img src="sources/images/img_paquete01.jpg" alt="">
+                                <h3>Aula 1</h3>
+                                <p>Capacidad de 5 a 10 personas</p>
+                                <p>Tipo Salón</p>
+                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                            </div>
+                            <div class="col-md-3 aulas" id="aula2">
+                                <img src="sources/images/img_paquete02.jpg" alt="">
+                                <h3>Aula 2</h3>
+                                <p>Capacidad de 12 a 24 personas</p>
+                                <p>Tipo Salón</p>
+                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                            </div>
+                            <div class="col-md-3 aulas" id="aula3">
+                                <img src="sources/images/img_paquete03.jpg" alt="">
+                                <h3>Aula 3</h3>
+                                <p>Capacidad de 5 a 10 personas</p>
+                                <p>Tipo Herradura</p>
+                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                            </div>
+                            <div class="col-md-3 aulas" id="aula4">
+                                <img src="sources/images/img_paquete01.jpg" alt="">
+                                <h3>Aula 4</h3>
+                                <p>Capacidad de 12 a 24 personas</p>
+                                <p>Tipo Herradura</p>
+                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                            </div>
+                        </div>
+                        <div id="step2" class="steper">
+                            <div class="col-md-12">
+                                <h3 class="description-step">Selecciona una fecha disponible y el horario que deseas reservar</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="sources/images/calendar.jpg" alt="">
+    
+                            </div>
+                            <div class="col-md-6">
+                                <form action="">
+                                    <div class="form-group row">
+                                        <label for="">Selecciona una fecha</label>
+                                        <div class='input-group date col-md-12' id='timePickerReservacion'>
+                                            <input type='text' class="form-control" style="padding: 0 -15px;" />
+                                            <span class="input-group-addon">
+                                                <span class="fa fa-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-6 col-xs-6 padding-left">
+                                            <label for="">Hora de inicio</label>
+                                            <select class="form-control">
+                                                <option>09:00 hrs</option>
+                                                <option>10:00 hrs</option>
+                                                <option>11:00 hrs</option>
+                                                <option>12:00 hrs</option>
+                                                <option>13:00 hrs</option>
+                                                <option>14:00 hrs</option>
+                                                <option>15:00 hrs</option>
+                                                <option>16:00 hrs</option>
+                                                <option>17:00 hrs</option>
+                                                <option>18:00 hrs</option>
+                                                <option>19:00 hrs</option>
+                                                <option>20:00 hrs</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-xs-6 padding-right">
+                                            <label for="">Hora de inicio</label>
+                                            <select class="form-control">
+                                                <option>10:00 hrs</option>
+                                                <option>11:00 hrs</option>
+                                                <option>12:00 hrs</option>
+                                                <option>13:00 hrs</option>
+                                                <option>14:00 hrs</option>
+                                                <option>15:00 hrs</option>
+                                                <option>16:00 hrs</option>
+                                                <option>17:00 hrs</option>
+                                                <option>18:00 hrs</option>
+                                                <option>19:00 hrs</option>
+                                                <option>20:00 hrs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox text-right">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Agregar otro día
+                                        </label>
+                                    </div>
+                                    <button class="btn-general btn-generalOrange pull-right">Continuar</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="step3" class="steper">
+                            <div class="col-md-12">
+                                <h3 class="description-step">Selecciona los items que deseas agregar a tu reservación</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <form action="">
+                                    <div class="form-group row">
+                                        <label for="refrigerio">Refrigerío</label>
+                                        <select id="refrigerio" class="form-control">
+                                            <option>Selecciona una opción</option>
+                                            <option>Estándar</option>
+                                            <option>Ejecutivo</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="wifi">Velocidad internet</label>
+                                        <select id="wifi" class="form-control">
+                                            <option>Selecciona una opción</option>
+                                            <option>100MB</option>
+                                            <option>200MB</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="llamadas">Llamadas teléfonicas</label>
+                                        <select id="llamadas" class="form-control">
+                                            <option>Selecciona una opción</option>
+                                            <option>Nacionales</option>
+                                            <option>Nacionales & Internacionales</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="celular">Llamadas a celular</label>
+                                        <select id="celular" class="form-control">
+                                            <option>Selecciona una opción</option>
+                                            <option>Si</option>
+                                            <option>No</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="servicio">Servicio Técnico</label>
+                                        <select id="servicio" class="form-control">
+                                            <option>Selecciona una opción</option>
+                                            <option>Servicio de primer nivel</option>
+                                            <option>Servicio de segundo nivel</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="col-md-12 pull-right">
+                                <button class="btn-general btn-generalOrange pull-right">Continuar</button>
+                            </div>
+                        </div>
+                        <div id="step4" class="steper">
+                            <div class="col-md-12">
+                                <h3 class="description-step">Paso 4</h3>
+                            </div>
+                        </div>
+                        <div id="step5" class="steper">
+                            <div class="col-md-12">
+                                <h3 class="description-step">Paso 5</h3>
+                            </div>
+                        </div>
+                        <div id="step6" class="steper">
+                            <div class="col-md-12">
+                                <h3 class="description-step">Paso 6</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 legales">
+                <p>Copyright © 2016 DiCenter | <span><a href="aviso.html">Aviso de privacidad</a></span> </p>
+            </div>
+            <div class="col-md-6 text-right">
+                <ul class="social">
+                    <li>Síguenos</li>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <img src="sources/images/btn_facebook.png" alt="Facebook DiCenter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <img src="sources/images/btn_twitter.png" alt="Twitter DiCenter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com" target="_blank">
+                            <img src="sources/images/btn_linkedin.png" alt="Linkedin Dicenter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/libs/jquery.min.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-switch.min.js"></script>
+<script type="text/javascript" src="js/libs/swiper.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
+<script>
+    $(document).ready(function(){
+        $("#step1").show();
+
+        $('.btn-num').click(function(){
+            var nodo = $(this).attr('href');
+
+            $("#btn1").removeClass('active');
+            if ($(nodo).is(":visible")){
+                $(nodo).hide();
+                return false;
+            }else{
+                $(".steper").hide();
+                $(nodo).fadeToggle( "slow" );
+                return false;
+            }
+        });
+    });
+</script>
+</body>
+</html>

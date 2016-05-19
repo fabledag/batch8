@@ -1,0 +1,113 @@
+#reservacion{
+  .steps{
+    position: relative;
+    margin: 50px 0;
+    z-index: 100;
+    background: url('../sources/images/line_steps.jpg') no-repeat 55% 24%;
+    ul.list-steps{
+      li{
+        list-style: none;
+        width: 16.2%;
+        display: inline-block;
+        vertical-align: top;
+        a{
+          text-align: center;
+          color: @light-gray;
+          cursor: pointer;
+          .number {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            background: white;
+            border: 2px solid #cccccc;
+            h3{
+              font-size: 35px;
+            }
+          }
+          &:hover,
+          &:active,
+          &:focus,
+          &.active{
+            text-decoration: none;
+            .number{
+              background: @orange-main;
+              color: white;
+              border: 2px solid @orange-main;
+            }
+            h4{
+              font-weight: 800;
+              color: @dark-gray;
+            }
+          }
+          h4{
+            max-width: 100px;
+            margin: 0 auto;
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+  .container-steps{
+    position: relative;
+    min-height: 650px;
+    h3.description-step{
+      padding-bottom: 40px;
+      width: 80%;
+    }
+    .steper{
+      position: absolute;
+      top: 0;
+      display: none;
+      left: 0;
+    }
+    #step1{
+      .aulas{
+        h3{
+          color: @orange-main;
+        }
+        a.btn-general{
+          width: 100%;
+        }
+      }
+    }
+    #step2{
+      form{
+        min-height: 500px;
+        position: relative;
+        .padding-left{
+          padding: 0 10px 0 0;
+        }
+        .padding-right{
+          padding: 0 0 0 10px;
+        }
+        .row{
+          margin: 20px 0 30px 0;
+        }
+        label{
+          font-size: 14px;
+          font-weight: 400;
+        }
+        button{
+          max-width: 200px;
+          bottom: 0;
+          position: absolute;
+          right: 0;
+        }
+      }
+
+    }
+    #step3{
+      .form-group{
+        margin: 20px 0;
+        label{
+          font-weight: 600;
+        }
+      }
+      button{
+        max-width: 200px;
+      }
+    }
+  }
+}
