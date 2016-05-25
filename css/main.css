@@ -74,6 +74,8 @@ header#main-header .navbar-default {
   border: none;
 }
 header#main-header .navbar-default .navbar-nav li a {
+  color: #afafaf;
+  font-weight: 200;
   padding-top: 35px;
   padding-bottom: 30px;
 }
@@ -82,6 +84,18 @@ header#main-header .navbar-default .navbar-nav li a:active,
 header#main-header .navbar-default .navbar-nav li a:focus {
   color: white;
   border-bottom: 5px solid #f26722;
+}
+header#main-header .navbar-default .navbar-nav li a.btn-reserva {
+  padding: 10px 30px;
+  background: #f26722;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 25px;
+}
+header#main-header .navbar-default .navbar-nav li a.btn-reserva:hover {
+  border: none;
 }
 header#main-header .navbar-default .navbar-toggle {
   margin-top: 30px;
@@ -244,8 +258,9 @@ footer .container ul.social li a:hover {
   min-height: 370px;
 }
 #packages-home #list-package .swiper-slide .description ul.description-list {
-  margin: 0;
   padding-bottom: 10px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 #packages-home #list-package .swiper-slide .description ul.description-list li {
   list-style: none;
@@ -627,7 +642,7 @@ footer .container ul.social li a:hover {
 #contact .data-contact .info ul li {
   list-style: none;
 }
-#contact .data-contact .info ul li h3 {
+#contact .data-contact .info ul li h4 {
   font-size: 20px;
   color: #f9a221;
 }
@@ -752,7 +767,7 @@ footer .container ul.social li a:hover {
 #live {
   padding-top: 30px;
   width: 100%;
-  height: 680px;
+  height: 380px;
   background: url('../sources/images/background_live.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -844,17 +859,18 @@ footer .container ul.social li a:hover {
 }
 #reservacion .container-steps {
   position: relative;
-  min-height: 650px;
+  min-height: 750px;
 }
 #reservacion .container-steps h3.description-step {
   padding-bottom: 40px;
-  width: 80%;
+  min-width: 80%;
 }
 #reservacion .container-steps .steper {
   position: absolute;
   top: 0;
   display: none;
   left: 0;
+  width: 100%;
 }
 #reservacion .container-steps #step1 .aulas h3 {
   color: #f9a221;
@@ -893,6 +909,106 @@ footer .container ul.social li a:hover {
 }
 #reservacion .container-steps #step3 button {
   max-width: 200px;
+}
+#reservacion .container-steps #step4 h3.description-step {
+  padding-bottom: 0;
+}
+#reservacion .container-steps #step4 a.sesion {
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #f26722;
+  font-weight: 400;
+  text-decoration: underline;
+}
+#reservacion .container-steps #step4 #registro {
+  margin-top: 40px;
+}
+#reservacion .container-steps #step4 #registro form#paso4 {
+  font-weight: 100;
+  font-size: 12px;
+}
+#reservacion .container-steps #step4 #registro .no-padding-left {
+  padding-left: 0;
+}
+#reservacion .container-steps #step4 #registro .no-padding-right {
+  padding-right: 0;
+}
+#reservacion .container-steps #step4 #registro button {
+  max-width: 200px;
+}
+#reservacion .container-steps #step5 .tg-wrap {
+  width: 100%;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+  font-weight: 300;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg tr.mean {
+  background: #f9f9f9;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg tr.mean th {
+  font-size: 15px;
+  font-weight: 800;
+  border: none;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg tr.item {
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg tr.total {
+  border: none;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg td,
+#reservacion .container-steps #step5 .tg-wrap .tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border: none;
+  text-align: center;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg td .img-carrito,
+#reservacion .container-steps #step5 .tg-wrap .tg th .img-carrito {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+#reservacion .container-steps #step5 .tg-wrap .tg td a,
+#reservacion .container-steps #step5 .tg-wrap .tg th a {
+  display: block;
+  font-size: 20px;
+  color: #333333;
+  text-decoration: none;
+}
+#reservacion .container-steps #step6 h3 {
+  padding-bottom: 10px;
+}
+#reservacion .container-steps #step6 .paypal img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .tg {
+    width: auto !important;
+  }
+  .tg col {
+    width: auto !important;
+  }
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto 0px;
+  }
 }
 @media (max-width: 720px) {
   .btn-general {
@@ -959,5 +1075,8 @@ footer .container ul.social li a:hover {
   }
   #soluciones #banner-quote .container p.quote {
     font-size: 17px;
+  }
+  #nosotros .banner-nosotros {
+    height: 660px;
   }
 }

@@ -34,6 +34,7 @@
                     <li><a href="soluciones.html">Soluciones</a></li>
                     <li><a href="paquetes.html">Paquetes</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a  class="btn-reserva" href="reservacion.html">Reserva ahora</a></li>
                 </ul>
             </div>
         </div>
@@ -87,7 +88,7 @@
                                     <div class="number">
                                         <h3>5</h3>
                                     </div>
-                                    <h4>Método de pago</h4>
+                                    <h4>Carrito</h4>
                                 </a>
                             </li>
                             <li>
@@ -95,175 +96,313 @@
                                     <div class="number">
                                         <h3>6</h3>
                                     </div>
-                                    <h4>¡Gracias!</h4>
+                                    <h4>Metódo de pago</h4>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="container-steps">
                         <div id="step1" class="steper">
-                            <div class="col-md-12">
-                                <h3 class="description-step">Aquí encontrarás las aulas que tenemos disponibles, para checar disponibilidad dale click en seleccionar</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="description-step">Aquí encontrarás las aulas que tenemos disponibles, para checar disponibilidad dale click en seleccionar</h3>
+                                </div>
                             </div>
-                            <div class="col-md-3 aulas" id="aula1">
-                                <img src="sources/images/img_paquete01.jpg" alt="">
-                                <h3>Aula 1</h3>
-                                <p>Capacidad de 5 a 10 personas</p>
-                                <p>Tipo Salón</p>
-                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+
+                            <div class="row">
+                                <div class="col-md-3 aulas" id="aula1">
+                                    <img src="sources/images/img_paquete01.jpg" alt="">
+                                    <h3>Aula 1</h3>
+                                    <p>Capacidad de 5 a 10 personas</p>
+                                    <p>Tipo Salón</p>
+                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                                </div>
+                                <div class="col-md-3 aulas" id="aula2">
+                                    <img src="sources/images/img_paquete02.jpg" alt="">
+                                    <h3>Aula 2</h3>
+                                    <p>Capacidad de 12 a 24 personas</p>
+                                    <p>Tipo Salón</p>
+                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                                </div>
+                                <div class="col-md-3 aulas" id="aula3">
+                                    <img src="sources/images/img_paquete03.jpg" alt="">
+                                    <h3>Aula 3</h3>
+                                    <p>Capacidad de 5 a 10 personas</p>
+                                    <p>Tipo Herradura</p>
+                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                                </div>
+                                <div class="col-md-3 aulas" id="aula4">
+                                    <img src="sources/images/img_paquete01.jpg" alt="">
+                                    <h3>Aula 4</h3>
+                                    <p>Capacidad de 12 a 24 personas</p>
+                                    <p>Tipo Herradura</p>
+                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                                </div>
                             </div>
-                            <div class="col-md-3 aulas" id="aula2">
-                                <img src="sources/images/img_paquete02.jpg" alt="">
-                                <h3>Aula 2</h3>
-                                <p>Capacidad de 12 a 24 personas</p>
-                                <p>Tipo Salón</p>
-                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
-                            </div>
-                            <div class="col-md-3 aulas" id="aula3">
-                                <img src="sources/images/img_paquete03.jpg" alt="">
-                                <h3>Aula 3</h3>
-                                <p>Capacidad de 5 a 10 personas</p>
-                                <p>Tipo Herradura</p>
-                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
-                            </div>
-                            <div class="col-md-3 aulas" id="aula4">
-                                <img src="sources/images/img_paquete01.jpg" alt="">
-                                <h3>Aula 4</h3>
-                                <p>Capacidad de 12 a 24 personas</p>
-                                <p>Tipo Herradura</p>
-                                <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
-                            </div>
+
                         </div>
                         <div id="step2" class="steper">
-                            <div class="col-md-12">
-                                <h3 class="description-step">Selecciona una fecha disponible y el horario que deseas reservar</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="description-step">Selecciona una fecha disponible y el horario que deseas reservar</h3>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <img src="sources/images/calendar.jpg" alt="">
-    
-                            </div>
-                            <div class="col-md-6">
-                                <form action="">
-                                    <div class="form-group row">
-                                        <label for="">Selecciona una fecha</label>
-                                        <div class='input-group date col-md-12' id='timePickerReservacion'>
-                                            <input type='text' class="form-control" style="padding: 0 -15px;" />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="sources/images/calendar.jpg" alt="">
+
+                                </div>
+                                <div class="col-md-6">
+                                    <form action="">
+                                        <div class="form-group row">
+                                            <label for="date">Selecciona una fecha</label>
+                                            <div class='input-group date col-md-12' id='timePickerReservacion'>
+                                                <input type='text' id="date" class="form-control" style="padding: 0 -15px;" />
                                             <span class="input-group-addon">
                                                 <span class="fa fa-calendar"></span>
                                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-md-6 col-xs-6 padding-left">
-                                            <label for="">Hora de inicio</label>
-                                            <select class="form-control">
-                                                <option>09:00 hrs</option>
-                                                <option>10:00 hrs</option>
-                                                <option>11:00 hrs</option>
-                                                <option>12:00 hrs</option>
-                                                <option>13:00 hrs</option>
-                                                <option>14:00 hrs</option>
-                                                <option>15:00 hrs</option>
-                                                <option>16:00 hrs</option>
-                                                <option>17:00 hrs</option>
-                                                <option>18:00 hrs</option>
-                                                <option>19:00 hrs</option>
-                                                <option>20:00 hrs</option>
-                                            </select>
+                                        <div class="form-group row">
+                                            <div class="col-md-6 col-xs-6 padding-left">
+                                                <label for="">Hora de inicio</label>
+                                                <select class="form-control">
+                                                    <option>09:00 hrs</option>
+                                                    <option>10:00 hrs</option>
+                                                    <option>11:00 hrs</option>
+                                                    <option>12:00 hrs</option>
+                                                    <option>13:00 hrs</option>
+                                                    <option>14:00 hrs</option>
+                                                    <option>15:00 hrs</option>
+                                                    <option>16:00 hrs</option>
+                                                    <option>17:00 hrs</option>
+                                                    <option>18:00 hrs</option>
+                                                    <option>19:00 hrs</option>
+                                                    <option>20:00 hrs</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-xs-6 padding-right">
+                                                <label for="">Hora de inicio</label>
+                                                <select class="form-control">
+                                                    <option>10:00 hrs</option>
+                                                    <option>11:00 hrs</option>
+                                                    <option>12:00 hrs</option>
+                                                    <option>13:00 hrs</option>
+                                                    <option>14:00 hrs</option>
+                                                    <option>15:00 hrs</option>
+                                                    <option>16:00 hrs</option>
+                                                    <option>17:00 hrs</option>
+                                                    <option>18:00 hrs</option>
+                                                    <option>19:00 hrs</option>
+                                                    <option>20:00 hrs</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6 col-xs-6 padding-right">
-                                            <label for="">Hora de inicio</label>
-                                            <select class="form-control">
-                                                <option>10:00 hrs</option>
-                                                <option>11:00 hrs</option>
-                                                <option>12:00 hrs</option>
-                                                <option>13:00 hrs</option>
-                                                <option>14:00 hrs</option>
-                                                <option>15:00 hrs</option>
-                                                <option>16:00 hrs</option>
-                                                <option>17:00 hrs</option>
-                                                <option>18:00 hrs</option>
-                                                <option>19:00 hrs</option>
-                                                <option>20:00 hrs</option>
-                                            </select>
+                                        <div class="checkbox text-right">
+                                            <label>
+                                                <input type="checkbox" value="">
+                                                Agregar otro día
+                                            </label>
                                         </div>
-                                    </div>
-                                    <div class="checkbox text-right">
-                                        <label>
-                                            <input type="checkbox" value="">
-                                            Agregar otro día
-                                        </label>
-                                    </div>
-                                    <button class="btn-general btn-generalOrange pull-right">Continuar</button>
-                                </form>
-                            </div>
-                        </div>
-                        <div id="step3" class="steper">
-                            <div class="col-md-12">
-                                <h3 class="description-step">Selecciona los items que deseas agregar a tu reservación</h3>
-                            </div>
-                            <div class="col-md-6">
-                                <form action="">
-                                    <div class="form-group row">
-                                        <label for="refrigerio">Refrigerío</label>
-                                        <select id="refrigerio" class="form-control">
-                                            <option>Selecciona una opción</option>
-                                            <option>Estándar</option>
-                                            <option>Ejecutivo</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="wifi">Velocidad internet</label>
-                                        <select id="wifi" class="form-control">
-                                            <option>Selecciona una opción</option>
-                                            <option>100MB</option>
-                                            <option>200MB</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="llamadas">Llamadas teléfonicas</label>
-                                        <select id="llamadas" class="form-control">
-                                            <option>Selecciona una opción</option>
-                                            <option>Nacionales</option>
-                                            <option>Nacionales & Internacionales</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="celular">Llamadas a celular</label>
-                                        <select id="celular" class="form-control">
-                                            <option>Selecciona una opción</option>
-                                            <option>Si</option>
-                                            <option>No</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="servicio">Servicio Técnico</label>
-                                        <select id="servicio" class="form-control">
-                                            <option>Selecciona una opción</option>
-                                            <option>Servicio de primer nivel</option>
-                                            <option>Servicio de segundo nivel</option>
-                                        </select>
-                                    </div>
-                                </form>
+                                        <button class="btn-general btn-generalOrange pull-right">Continuar</button>
+                                    </form>
+                                </div>
                             </div>
 
-                            <div class="col-md-12 pull-right">
-                                <button class="btn-general btn-generalOrange pull-right">Continuar</button>
+                        </div>
+                        <div id="step3" class="steper">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="description-step">Selecciona los items que deseas agregar a tu reservación</h3>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form action="">
+                                        <div class="form-group row">
+                                            <label for="refrigerio">Refrigerío</label>
+                                            <select id="refrigerio" class="form-control">
+                                                <option>Selecciona una opción</option>
+                                                <option>Estándar</option>
+                                                <option>Ejecutivo</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="wifi">Velocidad internet</label>
+                                            <select id="wifi" class="form-control">
+                                                <option>Selecciona una opción</option>
+                                                <option>100MB</option>
+                                                <option>200MB</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="llamadas">Llamadas teléfonicas</label>
+                                            <select id="llamadas" class="form-control">
+                                                <option>Selecciona una opción</option>
+                                                <option>Nacionales</option>
+                                                <option>Nacionales & Internacionales</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="celular">Llamadas a celular</label>
+                                            <select id="celular" class="form-control">
+                                                <option>Selecciona una opción</option>
+                                                <option>Si</option>
+                                                <option>No</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="servicio">Servicio Técnico</label>
+                                            <select id="servicio" class="form-control">
+                                                <option>Selecciona una opción</option>
+                                                <option>Servicio de primer nivel</option>
+                                                <option>Servicio de segundo nivel</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 pull-right">
+                                    <button class="btn-general btn-generalOrange pull-right">Continuar</button>
+                                </div>
                             </div>
                         </div>
                         <div id="step4" class="steper">
-                            <div class="col-md-12">
-                                <h3 class="description-step">Paso 4</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="description-step">Porfavor ingresa tus datos personales para hacer la reservación o si lo deseas</h3>
+                                    <p><a class="sesion" href="#">Inicia Sesión</a> o <a class="sesion" href="#">Regístrate</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="registro" class="col-md-6">
+                                    <form role="form" id="paso4">
+                                        <div class="form-group">
+                                            <label for="name">Nombres <span>*</span></label>
+                                            <input type="text" name="name" class="form-control" id="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-left">
+                                                    <label for="paterno">Apellido Paterno<span>*</span></label>
+                                                    <input type="text" name="paterno" class="form-control" id="paterno" required>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-right">
+                                                    <label for="materno">Apellido Materno <span>*</span></label>
+                                                    <input type="text" name="materno" class="form-control" id="materno" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Correo Electrónico <span>*</span></label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-left">
+                                                    <label for="celular">Celular</label>
+                                                    <input type="tel" name="celular" class="form-control" id="cel" maxlength="10" required>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12 col-sm-6 no-padding-right">
+                                                    <label for="materno">Teléfono</label>
+                                                    <input type="tel" name="materno" class="form-control" id="telefono" maxlength="10" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment">Mensaje</label>
+                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        </div>
+                                        <p class="campos">Los campos marcados (*) son obligatorios</p>
+                                        <button type="submit" class="btn-generalOrange btn-general pull-right">Enviar</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div id="step5" class="steper">
-                            <div class="col-md-12">
-                                <h3 class="description-step">Paso 5</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="description-step">Detalle Carrito</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="tg-wrap">
+                                        <table class="tg">
+                                            <tr class="mean">
+                                                <th class="tg-baqh">#</th>
+                                                <th class="tg-lqy6">Imagen</th>
+                                                <th class="tg-yw4l">Nombre</th>
+                                                <th class="tg-yw4l">Fecha</th>
+                                                <th class="tg-yw4l">Horario</th>
+                                                <th class="tg-yw4l">Precio</th>
+                                                <th class="tg-yw4l">Acción</th>
+                                            </tr>
+                                            <tr class="item">
+                                                <th class="tg-baqh">1</th>
+                                                <th class="tg-lqy6">
+                                                    <img class="img-carrito" src="sources/images/img_paquete01.jpg" width="30" alt="">
+                                                </th>
+                                                <th class="tg-yw4l">Aula 1</th>
+                                                <th class="tg-yw4l">20/01/2015</th>
+                                                <th class="tg-yw4l">9:00 - 11:00 hrs</th>
+                                                <th class="tg-yw4l">$1200.00</th>
+                                                <th class="tg-yw4l">
+                                                    <a href="" class="fa fa-trash"></a>
+                                                </th>
+                                            </tr>
+                                            <tr class="item">
+                                                <th class="tg-baqh">2</th>
+                                                <th class="tg-lqy6">
+                                                    <img class="img-carrito" src="sources/images/img_paquete01.jpg" width="30" alt="">
+                                                </th>
+                                                <th class="tg-yw4l">Aula 2</th>
+                                                <th class="tg-yw4l">20/01/2015</th>
+                                                <th class="tg-yw4l">9:00 - 11:00 hrs</th>
+                                                <th class="tg-yw4l">$1200.00</th>
+                                                <th class="tg-yw4l">
+                                                    <a href="" class="fa fa-trash"></a>
+                                                </th>
+                                            </tr>
+                                            <tr class="total">
+                                                <th class="tg-baqh" colspan="5"></th>
+                                                <th class="tg-yw4l total" colspan="2" style="text-align: left"><b>Total:</b> $2400.00</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Datos reservación</h3>
+                                    <p><b>Nombre:</b> Fabiola Ledesma Aguayo</p>
+                                    <p><b>Fecha:</b> 20/09/2016</p>
+                                    <p><b>Correo </b>electrónico: fabledag.21@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 pull-right">
+                                    <button class="btn-general btn-generalOrange pull-right" style="max-width: 200px">Continuar</button>
+                                </div>
                             </div>
                         </div>
                         <div id="step6" class="steper">
-                            <div class="col-md-12">
-                                <h3 class="description-step">Paso 6</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="description-step">Reservación <span>R112222345</span></h3>
+                                    <p>Para completar tu reservación es necesario un pago en línea, da click en el botón de abajo para redireccionarte a un pago seguro</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 paypal">
+                                    <img src="sources/images/img-paypal.jpg" alt="Paypal">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,6 +440,12 @@
         </div>
     </div>
 </footer>
+
+
+
+
+
+
 <script type="text/javascript" src="js/libs/jquery.min.js"></script>
 <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/libs/bootstrap-switch.min.js"></script>
@@ -308,7 +453,18 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
 <script>
+
+
+
     $(document).ready(function(){
+
+        $(function () {
+            $('#timePickerReservacion').datetimepicker({
+                format: 'DD/MM/YYYY'
+            });
+        });
+
+
         $("#step1").show();
 
         $('.btn-num').click(function(){

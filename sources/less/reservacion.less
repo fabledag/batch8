@@ -51,16 +51,17 @@
   }
   .container-steps{
     position: relative;
-    min-height: 650px;
+    min-height: 750px;
     h3.description-step{
       padding-bottom: 40px;
-      width: 80%;
+      min-width: 80%;
     }
     .steper{
       position: absolute;
       top: 0;
       display: none;
       left: 0;
+      width: 100%;
     }
     #step1{
       .aulas{
@@ -109,5 +110,110 @@
         max-width: 200px;
       }
     }
+    #step4{
+      h3.description-step{
+        padding-bottom: 0;
+      }
+      a.sesion{
+        display: inline-block;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: @orange-second;
+        font-weight: 400;
+        text-decoration: underline;
+      }
+      #registro{
+        margin-top: 40px;
+        form#paso4{
+          font-weight: 100;
+          font-size: 12px;
+        }
+        .no-padding-left{
+          padding-left: 0;
+        }
+        .no-padding-right{
+          padding-right: 0;
+        }
+        button{
+          max-width: 200px;
+        }
+      }
+    }
+    #step5{
+      .tg-wrap{
+        width: 100%;
+        .tg  {
+          width: 100%;
+          border-collapse:collapse;
+          border-spacing:0;
+          margin:0 auto;
+          font-weight: 300;
+          tr.mean{
+            background: #f9f9f9;
+            border-top: 1px solid #d7d7d7;
+            border-bottom: 1px solid #d7d7d7;
+            th{
+              font-size: 15px;
+              font-weight: 800;
+              border: none;
+            }
+          }
+          tr.item{
+            border-top: 1px solid #d7d7d7;
+            border-bottom: 1px solid #d7d7d7;
+          }
+          tr.total{
+            border: none;
+          }
+          td, th{
+            font-family:Arial, sans-serif;
+            font-size:14px;
+            font-weight: 400;
+            padding:10px 5px;
+            border-style:solid;
+            border-width:1px;
+            overflow:hidden;
+            word-break:normal;
+            border: none;
+            text-align: center;
+            .img-carrito{
+              width: 80px;
+              margin: 0 auto;
+              display: block;
+            }
+            a{
+              display: block;
+              font-size: 20px;
+              color: @dark-gray;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    #step6{
+      h3{
+       padding-bottom: 10px;
+      }
+      .paypal img{
+        max-width: 300px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .tg {
+    width: auto !important;
+  }
+  .tg col {
+    width: auto !important;
+  }
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto 0px;
   }
 }
