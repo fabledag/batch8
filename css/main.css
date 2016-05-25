@@ -859,17 +859,14 @@ footer .container ul.social li a:hover {
 }
 #reservacion .container-steps {
   position: relative;
-  min-height: 750px;
+  padding-bottom: 40px;
 }
 #reservacion .container-steps h3.description-step {
   padding-bottom: 40px;
   min-width: 80%;
 }
 #reservacion .container-steps .steper {
-  position: absolute;
-  top: 0;
   display: none;
-  left: 0;
   width: 100%;
 }
 #reservacion .container-steps #step1 .aulas h3 {
