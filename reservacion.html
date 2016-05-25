@@ -110,33 +110,54 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-md-3 aulas" id="aula1">
-                                    <img src="sources/images/img_paquete01.jpg" alt="">
-                                    <h3>Aula 1</h3>
-                                    <p>Capacidad de 5 a 10 personas</p>
-                                    <p>Tipo Salón</p>
-                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                                <div class="col-md-6 aulas" id="aula1">
+                                    <form action="">
+                                        <div class="form-group row" style="margin-bottom: 20px">
+                                            <label for="capacidad">Número de personas</label>
+                                            <select id="capacidad" class="form-control">
+                                                <option>1-10</option>
+                                                <option>10-12</option>
+                                                <option>12-20</option>
+                                                <option>20-24</option>
+                                                <option>24-30</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row" style="margin-bottom: 20px">
+                                            <label for="comp">Equipo de computo</label>
+                                            <select id="comp" class="form-control">
+                                                <option>Selecciona una opción</option>
+                                                <option>Con Computador</option>
+                                                <option>Sin computadora</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row" style="margin-bottom: 20px">
+                                            <label for="salon">Elige un tipo de salón</label>
+                                            <select id="salon" class="form-control">
+                                                <option>Selecciona una opción</option>
+                                                <option>Tipo salón de clases</option>
+                                                <option>Tipo herradura</option>
+                                                <option>Sala de conferencia</option>
+                                            </select>
+                                        </div>
+                                        <button class="btn-general btn-generalOrange pull-right" style="max-width: 200px"> Buscar</button>
+                                    </form>
                                 </div>
-                                <div class="col-md-3 aulas" id="aula2">
-                                    <img src="sources/images/img_paquete02.jpg" alt="">
-                                    <h3>Aula 2</h3>
-                                    <p>Capacidad de 12 a 24 personas</p>
-                                    <p>Tipo Salón</p>
-                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
-                                </div>
-                                <div class="col-md-3 aulas" id="aula3">
-                                    <img src="sources/images/img_paquete03.jpg" alt="">
-                                    <h3>Aula 3</h3>
-                                    <p>Capacidad de 5 a 10 personas</p>
-                                    <p>Tipo Herradura</p>
-                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
-                                </div>
-                                <div class="col-md-3 aulas" id="aula4">
-                                    <img src="sources/images/img_paquete01.jpg" alt="">
-                                    <h3>Aula 4</h3>
-                                    <p>Capacidad de 12 a 24 personas</p>
-                                    <p>Tipo Herradura</p>
-                                    <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+
+                                <div class="col-md-6">
+                                    <div class="col-md-6 aulas" id="aula3">
+                                        <img src="sources/images/img_paquete03.jpg" alt="">
+                                        <h3>Aula 3</h3>
+                                        <p>Capacidad de 5 a 10 personas</p>
+                                        <p>Tipo Herradura</p>
+                                        <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                                    </div>
+                                    <div class="col-md-6 aulas" id="aula4">
+                                        <img src="sources/images/img_paquete01.jpg" alt="">
+                                        <h3>Aula 4</h3>
+                                        <p>Capacidad de 12 a 24 personas</p>
+                                        <p>Tipo Herradura</p>
+                                        <a href="#" class="btn-general btn-generalOrange">Seleccionar</a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -401,7 +422,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12 paypal">
-                                    <img src="sources/images/img-paypal.jpg" alt="Paypal">
+                                    <a href="https://www.paypal.com/" target="_blank">
+                                        <img src="sources/images/img-paypal.jpg" alt="Paypal">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -410,7 +433,6 @@
             </div>
         </div>
     </section>
-
 <footer>
     <div class="container">
         <div class="row">
