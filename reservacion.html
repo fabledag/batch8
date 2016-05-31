@@ -474,35 +474,34 @@
 <script type="text/javascript" src="js/libs/swiper.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
-<script>
+    <script>
+
+        $(document).ready(function(){
+
+            $(function () {
+                $('#timePickerReservacion').datetimepicker({
+                    format: 'DD/MM/YYYY'
+                });
+            });
 
 
+            $("#step1").show();
 
-    $(document).ready(function(){
+            $('.btn-num').click(function(){
+                var nodo = $(this).attr('href');
 
-        $(function () {
-            $('#timePickerReservacion').datetimepicker({
-                format: 'DD/MM/YYYY'
+                $("#btn1").removeClass('active');
+                if ($(nodo).is(":visible")){
+                    $(nodo).hide();
+                    return false;
+                }else{
+                    $(".steper").hide();
+                    $(nodo).fadeToggle( "slow" );
+                    return false;
+                }
             });
         });
 
-
-        $("#step1").show();
-
-        $('.btn-num').click(function(){
-            var nodo = $(this).attr('href');
-
-            $("#btn1").removeClass('active');
-            if ($(nodo).is(":visible")){
-                $(nodo).hide();
-                return false;
-            }else{
-                $(".steper").hide();
-                $(nodo).fadeToggle( "slow" );
-                return false;
-            }
-        });
-    });
-</script>
+    </script>
 </body>
 </html>

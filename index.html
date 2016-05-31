@@ -15,6 +15,7 @@
 </head>
     <body>
         <header id="main-header">
+
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
@@ -27,8 +28,27 @@
                         </button>
                         <a class="navbar-brand" href="index.html"><img src="sources/images/logo_DiCenter.png" alt="Logotipo DiCenter"></a>
                     </div>
+                    <!--<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                    </div>-->
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <div class="login hidden-xs">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a class="btn-login" data-toggle="modal" href="#modalLogin">Login</a>
+                                </li>
+                                <li>
+                                    <a class="btn-login" data-toggle="modal" href="#modalRegistro">Regístrate</a>
+                                </li>
+                            </ul>
+                        </div>
                         <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden-md hidden-lg">
+                                <a data-toggle="modal" href="#modalLogin">Login</a>
+                            </li>
+                            <li class="hidden-md hidden-lg">
+                                <a data-toggle="modal" href="#modalRegistro">Registro</a>
+                            </li>
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="nosotros.html">Nosotros</a></li>
                             <li><a href="soluciones.html">Soluciones</a></li>
@@ -370,6 +390,109 @@
                     </div>
                 </div>
             </div>
+            <!--Modal de login-->
+            <div class="modal fade" id="modalLogin">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="text-center">Inicia Sesión</h3>
+                            <p class="text-center">Gracias por visitarnos</p>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="usrname">Usuario</label>
+                                    <input type="text" class="form-control" id="usrname" placeholder="Usuario o correo electrónico">
+                                </div>
+                                <div class="form-group">
+                                    <label for="psw">Contraseña</label>
+                                    <input type="password" class="form-control" id="psw" placeholder="Ingresa tu contraseña">
+                                </div>
+
+
+                                <p><a href="#" class="text-center">¿Olvidaste tu contraseña?</a></p>
+                                <p class="text-center">¿Aún no tienes cuenta?<span><a data-toggle="modal"  data-dismiss="modal" href="#modalRegistro" style="display: inline-block">&nbsp;Regístrate</a></span></p>
+
+
+                                <div class="checkbox">
+                                    <label class="text-center center-block">
+                                        <input type="checkbox" value="" checked> Recuerdame en esta computadora
+                                    </label>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Modal de registro-->
+            <div class="modal fade" id="modalRegistro">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="text-left">Regístrate</h3>
+                            <p class="text-left">Dinos más acerca de ti</p>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="name">Nombre Completo <span>*</span></label>
+                                    <input type="text" name="fullname" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-12 col-sm-6 no-padding-left">
+                                            <label for="paterno-registro">Apellido Paterno<span>*</span></label>
+                                            <input type="paterno-registro" class="form-control" id="paterno-registro" required>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12 col-sm-6 no-padding-left">
+                                            <label for="materno-registro">Apellido Materno<span>*</span></label>
+                                            <input type="materno-registro" class="form-control" id="materno-registro" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico <span>*</span></label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-12 col-sm-6 no-padding-left">
+                                            <label for="tel">Teléfono (10 digitos)<span>*</span></label>
+                                            <input type="tel" class="form-control" id="tel" required>
+                                        </div>
+                                        <div class="col-md-6 col-xs-12 col-sm-6 no-padding-right">
+                                            <label for="empresa">Empresa</label>
+                                            <input type="text" class="form-control" id="empresa">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="campos">Los campos marcados (*) son obligatorios</p>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="" checked> Acepto terminos y condiciones
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-default btn-success btn-block">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </footer>
         <script type="text/javascript" src="js/libs/jquery.min.js"></script>
         <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
@@ -378,73 +501,79 @@
         <script type="text/javascript" src="js/main.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async="" defer=""></script>
         <script>
-            //Integración de mapa de google maps
-            function initMap() {
-                var dataL01 = {lat:19.3933199, lng:-99.1746729};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 17,
-                    center: new google.maps.LatLng(dataL01),
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    scrollwheel: false,
-                });
-                var marker = new google.maps.Marker({
-                    position: dataL01,
-                    map: map,
-                    icon: 'sources/images/pin_dicenter.png'
-                });
-            }
+            //Modales de login
 
-            //Inicializar Swiper
-            var swiper = new Swiper('#slider .swiper-container', {
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
-                nextButton: '#slider .swiper-button-next',
-                prevButton: '#slider .swiper-button-prev',
-                spaceBetween: 20,
-                effect: 'fade',
-                loop : true,
-                autoplay: 4500
-            });
+            $(document).ready(function(){
 
-            //Segundo swiper
-            var swiper2 = new Swiper('#packages-home .swiper-container', {
-                slidesPerView: 3,
-                nextButton: '#packages-home .swiper-button-next',
-                prevButton: '#packages-home .swiper-button-prev',
-                spaceBetween: 30,
-                autoplay: 3500
-            });
-
-            var mobile = 720;
-
-            $(window).resize(function(){
-                resizeSwiper();
-            });
-
-            $(window).ready(function(){
-                resizeSwiper();
-            });
-
-            resizeSwiper = function(){
-                if($(window).width() <= 768){
-                    swiper2 = null;
-                    swiper2 = new Swiper('#packages-home .swiper-container', {
-                        slidesPerView: 1,
-                        nextButton: '#packages-home .swiper-button-next',
-                        prevButton: '#packages-home .swiper-button-prev',
-                        spaceBetween: 30,
-                        autoplay: 3500
+                //Integración de mapa de google maps
+                function initMap() {
+                    var dataL01 = {lat:19.3933199, lng:-99.1746729};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 17,
+                        center: new google.maps.LatLng(dataL01),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        scrollwheel: false,
                     });
-                }else{
-                    swiper2 = new Swiper('#packages-home .swiper-container', {
-                        slidesPerView: 3,
-                        nextButton: '#packages-home .swiper-button-next',
-                        prevButton: '#packages-home .swiper-button-prev',
-                        spaceBetween: 30,
-                        autoplay: 3500
+                    var marker = new google.maps.Marker({
+                        position: dataL01,
+                        map: map,
+                        icon: 'sources/images/pin_dicenter.png'
                     });
                 }
-            }
+
+                //Inicializar Swiper
+                var swiper = new Swiper('#slider .swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    nextButton: '#slider .swiper-button-next',
+                    prevButton: '#slider .swiper-button-prev',
+                    spaceBetween: 20,
+                    effect: 'fade',
+                    loop : true,
+                    autoplay: 4500
+                });
+
+                //Segundo swiper
+                var swiper2 = new Swiper('#packages-home .swiper-container', {
+                    slidesPerView: 3,
+                    nextButton: '#packages-home .swiper-button-next',
+                    prevButton: '#packages-home .swiper-button-prev',
+                    spaceBetween: 30,
+                    autoplay: 3500
+                });
+
+                var mobile = 720;
+
+                $(window).resize(function(){
+                    resizeSwiper();
+                });
+
+                $(window).ready(function(){
+                    resizeSwiper();
+                });
+
+                resizeSwiper = function(){
+                    if($(window).width() <= 768){
+                        swiper2 = null;
+                        swiper2 = new Swiper('#packages-home .swiper-container', {
+                            slidesPerView: 1,
+                            nextButton: '#packages-home .swiper-button-next',
+                            prevButton: '#packages-home .swiper-button-prev',
+                            spaceBetween: 30,
+                            autoplay: 3500
+                        });
+                    }else{
+                        swiper2 = new Swiper('#packages-home .swiper-container', {
+                            slidesPerView: 3,
+                            nextButton: '#packages-home .swiper-button-next',
+                            prevButton: '#packages-home .swiper-button-prev',
+                            spaceBetween: 30,
+                            autoplay: 3500
+                        });
+                    }
+                }
+
+            });
         </script>
     </body>
 </html>

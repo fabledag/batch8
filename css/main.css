@@ -69,44 +69,65 @@ header#main-header .navbar-brand {
   height: auto;
   max-width: 220px;
 }
-header#main-header .navbar-default {
+header#main-header .navbar {
   background: #333333;
   border: none;
+  min-height: 75px;
+  margin-bottom: 0;
 }
-header#main-header .navbar-default .navbar-nav li a {
+header#main-header .navbar .login {
+  height: 35px;
+  text-align: right;
+  width: 70%;
+  float: right !important;
+  border-bottom: 1px solid #464646;
+}
+header#main-header .navbar .navbar-nav {
+  margin-right: 0;
+}
+header#main-header .navbar .navbar-nav li a {
   color: #afafaf;
   font-weight: 200;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  border-bottom: 5px solid transparent;
 }
-header#main-header .navbar-default .navbar-nav li a:hover,
-header#main-header .navbar-default .navbar-nav li a:active,
-header#main-header .navbar-default .navbar-nav li a:focus {
+header#main-header .navbar .navbar-nav li a:hover,
+header#main-header .navbar .navbar-nav li a:active,
+header#main-header .navbar .navbar-nav li a:focus {
   color: white;
   border-bottom: 5px solid #f26722;
 }
-header#main-header .navbar-default .navbar-nav li a.btn-reserva {
+header#main-header .navbar .navbar-nav li a.btn-login {
+  padding: 0;
+  font-size: 13px;
+  margin: 10px 5px;
+  text-align: right;
+  border: none;
+}
+header#main-header .navbar .navbar-nav li a.btn-login:hover {
+  border: none;
+}
+header#main-header .navbar .navbar-nav li a.btn-reserva {
   padding: 10px 30px;
   background: #f26722;
   color: white;
   border-radius: 5px;
   text-align: center;
   vertical-align: middle;
-  margin-top: 25px;
-}
-header#main-header .navbar-default .navbar-nav li a.btn-reserva:hover {
+  margin-top: 8px;
+  margin-bottom: 12px;
   border: none;
 }
-header#main-header .navbar-default .navbar-toggle {
+header#main-header .navbar .navbar-nav li a.btn-reserva:hover {
+  border: none;
+}
+header#main-header .navbar .navbar-toggle {
   margin-top: 30px;
   border-color: white;
 }
-header#main-header .navbar-default .navbar-toggle:hover {
+header#main-header .navbar .navbar-toggle:hover {
   background-color: white;
-}
-header#main-header .navbar {
-  min-height: 75px;
-  margin-bottom: 0;
 }
 .second-container {
   max-width: 700px;
@@ -193,6 +214,104 @@ footer .container ul.social li a:hover {
   margin: 0 auto;
 }
 #slider h2 span {
+  color: #f9a221;
+}
+#modalLogin .modal-content {
+  width: 70%;
+  margin: 0 auto;
+}
+#modalLogin .modal-content .modal-header {
+  background: #333333;
+}
+#modalLogin .modal-content .modal-header h3 {
+  color: white;
+  font-size: 25px;
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+#modalLogin .modal-content .modal-header p {
+  color: #f9a221;
+}
+#modalLogin .modal-content .modal-body form label {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+}
+#modalLogin .modal-content .modal-body form input {
+  height: 45px;
+}
+#modalLogin .modal-content .modal-body form .checkbox label {
+  font-size: 12px;
+  color: #333333;
+}
+#modalLogin .modal-content .modal-body form .checkbox input {
+  height: auto;
+}
+#modalLogin .modal-content .modal-body form .btn {
+  background: #f9a221;
+  width: 50%;
+  padding: 10px 0;
+  border: none;
+  margin: 0 auto;
+}
+#modalLogin .modal-content .modal-body p {
+  color: #333333;
+  font-size: 14px;
+}
+#modalLogin .modal-content .modal-body p a {
+  color: #f9a221;
+}
+#modalRegistro .modal-content {
+  width: 100%;
+  margin: 0 auto;
+}
+#modalRegistro .modal-content .modal-header {
+  background: #333333;
+}
+#modalRegistro .modal-content .modal-header h3 {
+  color: white;
+  font-size: 25px;
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+#modalRegistro .modal-content .modal-header p {
+  color: #f9a221;
+}
+#modalRegistro .modal-content .modal-body form label {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+}
+#modalRegistro .modal-content .modal-body form input {
+  height: 45px;
+}
+#modalRegistro .modal-content .modal-body form .checkbox label {
+  font-size: 12px;
+  color: #333333;
+}
+#modalRegistro .modal-content .modal-body form .checkbox input {
+  height: auto;
+}
+#modalRegistro .modal-content .modal-body form .btn {
+  background: #f9a221;
+  width: 50%;
+  padding: 10px 0;
+  border: none;
+  margin: 0 auto;
+}
+#modalRegistro .modal-content .modal-body form .no-padding-left {
+  padding-left: 0;
+}
+#modalRegistro .modal-content .modal-body form .no-padding-right {
+  padding-right: 0;
+}
+#modalRegistro .modal-content .modal-body p {
+  color: #333333;
+  font-size: 14px;
+}
+#modalRegistro .modal-content .modal-body p a {
   color: #f9a221;
 }
 #packages-home {
@@ -1014,6 +1133,7 @@ footer .container ul.social li a:hover {
   header#main-header .navbar-default .navbar-nav li a {
     padding-top: 25px;
     padding-bottom: 25px;
+    border: none;
   }
   header#main-header .navbar-default .navbar-nav li a:hover,
   header#main-header .navbar-default .navbar-nav li a:active,
@@ -1075,5 +1195,8 @@ footer .container ul.social li a:hover {
   }
   #nosotros .banner-nosotros {
     height: 660px;
+  }
+  #modalLogin .modal-content {
+    width: 100%;
   }
 }

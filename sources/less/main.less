@@ -82,16 +82,27 @@ header#main-header{
    height: auto;
     max-width: 220px;
   }
-  .navbar-default{
+  .navbar{
     background: @dark-gray;
     border: none;
+    min-height: 75px;
+    margin-bottom: 0;
+    .login{
+      height: 35px;
+      text-align: right;
+      width: 70%;
+      float: right !important;
+      border-bottom: 1px solid #464646;
+    }
     .navbar-nav{
+      margin-right: 0;
       li{
         a{
           color: #afafaf;
           font-weight: 200;
-          padding-top: 35px;
-          padding-bottom: 30px;
+          padding-top: 18px;
+          padding-bottom: 17px;
+          border-bottom: 5px solid transparent;
           &:hover,
           &:active,
           &:focus{
@@ -99,14 +110,26 @@ header#main-header{
             border-bottom: 5px solid @orange-second;
           }
         }
+        a.btn-login{
+          padding: 0;
+          font-size: 13px;
+          margin: 10px 5px;
+          text-align: right;
+          border: none;
+          &:hover{
+            border: none;
+          }
+        }
         a.btn-reserva{
           padding: 10px 30px;
-          background: @orange-second;
+          background: #f26722;
           color: white;
           border-radius: 5px;
           text-align: center;
           vertical-align: middle;
-          margin-top: 25px;
+          margin-top: 8px;
+          margin-bottom: 12px;
+          border: none;
           &:hover{
             border: none;
           }
@@ -120,10 +143,6 @@ header#main-header{
         background-color: white;
       }
     }
-  }
-  .navbar{
-   min-height: 75px;
-    margin-bottom: 0;
   }
 }
 
@@ -193,6 +212,7 @@ footer{
 
 
 @import "swiper";
+@import "login";
 @import "homePackage";
 @import "homeQuote";
 @import "homeSolutions";
