@@ -314,6 +314,14 @@ footer .container ul.social li a:hover {
 #modalRegistro .modal-content .modal-body p a {
   color: #f9a221;
 }
+#modalRegistro .modal-content .modal-body .campos {
+  color: #f9a221;
+  font-size: 12px;
+}
+#modalRegistro .modal-content .modal-body .btn-registro {
+  width: 100% !important;
+  padding-top: 30px;
+}
 #packages-home {
   position: relative;
   padding: 50px 0 0 0;
